@@ -1,0 +1,6 @@
+# On press begin happens before anything automatically triggers
+on_press_begin = {
+	events = {
+		folklauncher.1
+	}
+}

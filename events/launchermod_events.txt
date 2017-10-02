@@ -1,0 +1,48 @@
+namespace = folklauncher
+
+country_event = {
+	id = folklauncher.1
+	title = "addonmenu_test_title"
+	desc = "addonmenu_test.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "folk_launcher_window"
+	force_open = yes
+
+	# Will it crash if I remove the portraitcountry or picture_event_data ?
+	# Will it just not show anything?
+	# I can't even be arsed to restart Stellaris one time just to check.
+	# That's how much I care.
+	picture_event_data = {
+		portrait = event_target:portraitcountry
+		room = ethic_spaceship_room
+	}
+	immediate = {
+		save_event_target_as = portraitcountry
+	}
+	option = {
+		name = ""
+		custom_gui = "folk_launcher_button_option"
+		default_hide_option = yes
+	}
+	option = {
+		name = ""
+		custom_gui = "folk_launcher_button_option"
+	}
+		option = {
+		name = ""
+		custom_gui = "folk_launcher_button_option"
+	}
+	option = {
+		name = ""
+		custom_gui = "folk_launcher_button_option"
+	}
+	option = {
+		name = ""
+		custom_gui = "folk_launcher_button_option"
+	}
+	option = {
+		name = ""
+		custom_gui = "folk_launcher_button_option"
+	}
+}

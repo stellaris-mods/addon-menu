@@ -1,0 +1,209 @@
+guiTypes = {
+	containerWindowType = {
+		name = "folk_launcher_button_option"
+		#position = { x = 0 y = 0 }
+		size = { width = 560 height = 112 }
+		moveable = no
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_mod_button_nsc"
+			position = { x = 0 y = 0 }
+			size = { x = 560 y = 100 }
+			text = "OPTION_TEXT"
+		}
+
+		# This might be needed, dont remove it until things are stable
+		# OverlappingElementsBoxType = {
+		# 	name = "trigger_icons"
+		# 	position = { x = 0  y = 10 }
+		# 	size = { x=65 y= 28 }
+		# }
+	}
+
+	containerWindowType = {
+		name = "folk_launcher_window"
+		orientation = center
+		origo = center
+		size = { width = 1200 height = 700 }
+
+		# UNUSED
+		# buttonType = {
+		# 	name = "focus_button"
+		# 	spriteType = "GFX_fleetview_focus"
+		# 	buttonFont = "cg_16b"
+		# }
+
+		# buttonType = {
+		# 	name = "close"
+		# 	quadTextureSprite = "GFX_main_close_button"
+		# 	position = { x= -45 y = 16 }
+		# 	Orientation = "UPPER_RIGHT"
+		# 	shortcut = "ESCAPE"
+		# 	clicksound = "back_click"
+		# }
+
+		# Quest country Empire name
+		instantTextBoxType = {
+			name = "heading"
+			font = "malgun_goth_24"
+		}
+
+		# UNUSED
+		buttonType = {
+			name = "confirm_button"
+			quadTextureSprite = "GFX_standard_button_142_34_button"
+			font = "cg_16b"
+		}
+
+		### PORTRAIT ###
+
+		# UNUSED, can we remove it without crashing?
+		containerWindowType = {
+			name = "portrait_background"
+			iconType = {
+				name = "event_picture"
+				spriteType = "GFX_diplomacy_portrait_frame"
+			}
+			iconType = {
+				name = "portrait"
+				spriteType = "GFX_portrait_character"
+			}
+		}
+
+		containerWindowType = {
+			name = "portrait"
+			iconType = {
+				name = "portrait"
+				spriteType = "GFX_portrait_gamesetup_mask"
+			}
+			iconType = {
+				name = "city_frame"
+				spriteType = "GFX_diplomacy_portrait_frame"
+			}
+		}
+
+		# UNUSED
+		instantTextBoxType={
+			name = "empire_name"
+			text = "Kammarian Galactic Concordat"
+			font = "cg_16b"
+		}
+		# UNUSED
+		instantTextBoxType={
+			name = "empire_government_type"
+			font = "cg_16b"
+		}
+		# UNUSED
+		instantTextBoxType={
+			name = "empire_personality_type"
+			font = "cg_16b"
+		}
+		OverlappingElementsBoxType = {
+			name = "empire_ethics_icons"
+		}
+		iconType = {
+			name = "empire_flag"
+			spriteType = "GFX_empire_flag_128"
+		}
+
+		# UNUSED
+		containerWindowType = {
+			name = "leader_details"
+			dontRender = ""
+
+			containerWindowType = {
+				name = "empire_traits_box"
+			}
+
+			instantTextBoxType = {
+				name = "empire_traits_label"
+				font = "cg_16b"
+			}
+
+			overlappingElementsBoxType = {
+				name = "leader_traits"
+			}
+
+			instantTextBoxType = {
+				name = "leader_name"
+				font = "cg_16b"
+			}
+
+			instantTextBoxType = {
+				name = "leader_species"
+				font = "cg_16b"
+			}
+		}
+
+		containerWindowType = {
+			name = "opinion_window"
+			iconType = {
+				name = "their_opinion_icon"
+				spriteType = "GFX_diplomacy_opinion"
+			}
+			instantTextBoxType = {
+				name = "their_opinion"
+				font = "cg_16b"
+			}
+		}
+
+		iconType = {
+			name = "folk_launcher_desc"
+			spriteType = "GFX_folk_launcher_desc"
+		}
+
+		# Black background frame
+		buttonType = {
+			name = "alien_message_background"
+			size = { x = 552 y = 544 }
+			position = { x = 24 y = 124 }
+			spriteType = "GFX_tiles_dark_area_cut_8"
+			alwaysTransparent = yes
+		}
+
+		# event desc
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "cg_16b"
+			position = { x = 30 y = 130 }
+			maxWidth = 544
+			maxHeight = 540
+			fixedSize = yes
+		}
+
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			moveable = no
+
+			# event title
+			instantTextBoxType = {
+				name = "action_title"
+				maxWidth = 552
+				maxHeight = 112
+				fixedSize = yes
+				format = center
+				alwaysTransparent = yes
+				font = "malgun_goth_24"
+				position = { x = 24 y = 46 }
+				Orientation = "CENTER"
+			}
+
+			# UNUSED
+			instantTextBoxType={
+				name = "action_desc"
+				font = "cg_16b"
+				position = { x = -1000 y = -1000 }
+				maxWidth = 12
+				maxHeight = 12
+				fixedSize = yes
+			}
+			listboxType = {
+				name = "option_list"
+				background = "" # added
+				position = { x = 600 y = 12 }
+				size = { x = 600 y = 680 }
+				scrollbartype = "standardlistbox_slider"
+			}
+		}
+	}
+}
